@@ -1,8 +1,8 @@
-# 🤖 Robot ASTI Robotics Challenge 2025/26 - Versión Mejorada 2.0
+# Robot ASTI Robotics Challenge 2025/26
 
 Sistema completo de control para robot de competición ASTI con soporte para Arduino y Raspberry Pi, control por Bluetooth y WiFi, múltiples modos de competición, y funcionalidades de automatización industrial para el desafío "Automatiza el futuro".
 
-## 📋 Características
+## Características
 
 ### Funcionalidades Básicas
 - **Múltiples Plataformas**: Arduino y Raspberry Pi
@@ -25,50 +25,7 @@ Sistema completo de control para robot de competición ASTI con soporte para Ard
 - 📈 **Dashboard Web**: Visualización de telemetría en tiempo real
 - 💾 **Exportación de Datos**: Logs en JSON y CSV para análisis
 
-## 🛠️ Hardware Necesario
-
-### Hardware Básico (Obligatorio)
-
-#### Arduino
-- Arduino Uno/Mega/Nano
-- Driver de motores L298N o similar
-- Módulo Bluetooth HC-05 o HC-06
-- 3x Sensores IR (seguimiento de línea)
-- Sensor ultrasónico HC-SR04 (modo sumo)
-- 2x Sensores de borde (para sumo)
-- 2x Motores DC con reductora
-- Batería (7.4V - 12V recomendado)
-
-#### Raspberry Pi
-- Raspberry Pi 3/4/Zero W (con WiFi)
-- Driver de motores L298N o controlador GPIO
-- 3x Sensores IR
-- Sensor ultrasónico HC-SR04
-- 2x Sensores de borde
-- 2x Motores DC
-- Batería con regulador 5V para RPi
-
-### Hardware Opcional (Para Automatización)
-
-#### Sensor de Color
-- **Sensor TCS3200** (~5€)
-- Permite clasificar objetos por color
-- Simula clasificación industrial
-
-#### Pinza/Brazo
-- **Servo SG90 o similar** (~3€)
-- **Pinza mecánica** (~5€)
-- Permite manipular objetos
-- Simula logística interna
-
-#### Indicadores LED
-- **3x LEDs (Rojo, Verde, Azul)** (~2€)
-- O **1x LED RGB** (~1€)
-- Comunicación visual de estado
-
-**Inversión adicional total: ~15€** (dentro del presupuesto de 250€)
-
-## 📦 Instalación
+## Instalación
 
 ### Arduino
 
@@ -139,7 +96,7 @@ sudo python3 robot_rpi.py
    - Abrir navegador en: `http://[IP_RASPBERRY]:5000`
    - Ejemplo: `http://192.168.1.100:5000`
 
-## 🎮 Uso
+## Uso
 
 ### Interfaz Web
 
@@ -172,7 +129,7 @@ M3 - Modo Manual
 V[0-255] - Cambiar velocidad (ej: V200)
 ```
 
-## 📱 Apps Recomendadas
+## Apps Recomendadas
 
 ### Android
 - **Serial Bluetooth Terminal** (Play Store)
@@ -222,7 +179,7 @@ Modificar las constantes al inicio de cada archivo:
 MOTOR_IZQ_A = 17  # Cambiar según tu GPIO
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Arduino no responde a Bluetooth
 - Verificar conexión TX/RX (cruzados)
@@ -418,7 +375,7 @@ sudo python3 robot_rpi_mejorado.py
 
 ---
 
-## 📖 Documentación Adicional
+## Documentación Adicional
 
 - **[MEJORAS_RECOMENDADAS.md](MEJORAS_RECOMENDADAS.md)**: Guía completa de mejoras para ASTI Challenge
 - **[CALIBRACION.md](CALIBRACION.md)**: Guía de calibración de todos los sensores
@@ -449,35 +406,3 @@ El sistema de telemetría genera automáticamente:
 - 📈 Datos para gráficas
 - 📝 Evidencias para la memoria
 - 🧪 Resultados de pruebas
-
-**Ideal para el apartado "Testing – Validaciones" del proyecto**
-
----
-
-## 📝 Licencia
-
-Este proyecto es de código abierto. Úsalo y modifícalo libremente para tu competición.
-
-## 🤝 Contribuciones
-
-¡Mejoras y sugerencias son bienvenidas! Especialmente para:
-- Nuevos modos de competición
-- Optimización de algoritmos
-- Soporte para más sensores
-- Mejoras en la interfaz
-
-## 📞 Soporte
-
-Para dudas o problemas:
-1. Revisar sección "Solución de Problemas"
-2. Consultar `CALIBRACION.md` para problemas de sensores
-3. Revisar `MEJORAS_RECOMENDADAS.md` para optimizaciones
-4. Verificar conexiones de hardware
-5. Comprobar mensajes en Serial Monitor (Arduino) o terminal (RPi)
-
----
-
-**¡Buena suerte en el ASTI Robotics Challenge 2025/26! 🏁🤖**
-
-**Versión 2.0** - Optimizado para el desafío "Automatiza el futuro"
-
