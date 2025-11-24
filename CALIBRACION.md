@@ -358,15 +358,3 @@ cp calibracion_backup.json calibracion.json
 
 ---
 
-## 📞 Soporte
-
-Si tienes problemas con la calibración:
-
-1. Revisa esta guía
-2. Consulta el archivo `MEJORAS_RECOMENDADAS.md`
-3. Verifica conexiones de hardware
-4. Revisa logs de telemetría
-
----
-
-**¡Buena calibración = Mejor rendimiento en competición!** 🏆
