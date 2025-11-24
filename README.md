@@ -380,7 +380,6 @@ sudo python3 robot_rpi_mejorado.py
 - **[MEJORAS_RECOMENDADAS.md](MEJORAS_RECOMENDADAS.md)**: Guía completa de mejoras para ASTI Challenge
 - **[CALIBRACION.md](CALIBRACION.md)**: Guía de calibración de todos los sensores
 - **[TESTING.md](TESTING.md)**: Guía de pruebas y validación
-- **[implementation_plan.md](.gemini/antigravity/brain/.../implementation_plan.md)**: Plan de implementación técnico
 
 ---
 
