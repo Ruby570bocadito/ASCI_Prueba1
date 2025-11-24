@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2025-11-24T15:46:58.963716",
+    "tiempo_transcurrido": 0.0,
+    "tipo": "TEST",
+    "datos": {
+      "valor": 123
+    }
+  }
+]

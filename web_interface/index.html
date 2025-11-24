@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Control Robot - Competición</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🤖 Robot Control</h1>
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot"></span>
+                <span id="connectionStatus">Conectando...</span>
+            </div>
+        </header>
+
+        <!-- Selector de Modo -->
+        <section class="mode-selector">
+            <h2>Modo de Competición</h2>
+            <div class="mode-buttons">
+                <button class="mode-btn active" data-mode="M3">
+                    <span class="icon">🎮</span>
+                    <span>Manual</span>
+                </button>
+                <button class="mode-btn" data-mode="M1">
+                    <span class="icon">📍</span>
+                    <span>Línea</span>
+                </button>
+                <button class="mode-btn" data-mode="M2">
+                    <span class="icon">⚔️</span>
+                    <span>Sumo</span>
+                </button>
+            </div>
+            <div class="mode-info" id="modeInfo">
+                Modo: <strong id="currentMode">Manual</strong>
+            </div>
+        </section>
+
+        <!-- Control Manual -->
+        <section class="manual-control" id="manualControl">
+            <h2>Control Direccional</h2>
+            
+            <div class="control-pad">
+                <!-- Botón Adelante -->
+                <button class="control-btn" id="btnForward" data-cmd="F">
+                    <span>▲</span>
+                </button>
+                
+                <!-- Botones Izquierda y Derecha -->
+                <div class="horizontal-controls">
+                    <button class="control-btn" id="btnLeft" data-cmd="L">
+                        <span>◄</span>
+                    </button>
+                    <button class="control-btn stop-btn" id="btnStop" data-cmd="S">
+                        <span>■</span>
+                    </button>
+                    <button class="control-btn" id="btnRight" data-cmd="R">
+                        <span>►</span>
+                    </button>
+                </div>
+                
+                <!-- Botón Atrás -->
+                <button class="control-btn" id="btnBackward" data-cmd="B">
+                    <span>▼</span>
+                </button>
+            </div>
+
+            <!-- Control de Velocidad -->
+            <div class="speed-control">
+                <label for="speedSlider">
+                    Velocidad: <strong id="speedValue">80</strong>%
+                </label>
+                <input type="range" id="speedSlider" min="0" max="100" value="80" step="5">
+            </div>
+        </section>
+
+        <!-- Información del Robot -->
+        <section class="robot-info">
+            <div class="info-card">
+                <span class="info-label">Estado:</span>
+                <span class="info-value" id="robotStatus">Detenido</span>
+            </div>
+            <div class="info-card">
+                <span class="info-label">Velocidad:</span>
+                <span class="info-value" id="robotSpeed">80%</span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Control por WiFi/Bluetooth • Competición ASTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
